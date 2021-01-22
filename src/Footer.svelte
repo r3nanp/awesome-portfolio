@@ -2,19 +2,17 @@
 </script>
 
 <main>
-  <footer>
-    <p>Este website foi feito com Svelte e 💖</p>
+  <footer class="flex items-center justify-center flex-col">
+    <p class="text-md text-white">Este website foi feito com Svelte e 💖</p>
+
+    <a
+      href="https://github.com/r3nanp/awesome-portfolio"
+      rel="noopener noreferrer"
+      target="_blank"
+      class="bg-gray-500 px-2 py-1 rounded-xl transition hover:bg-gray-700"
+      >
+      <i class="fab fa-github fill-current text-white" />
+      Star</a
+    >
   </footer>
 </main>
-
-<style>
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  p {
-    font: 400 1rem Roboto, sans-serif;
-  }
-</style>
