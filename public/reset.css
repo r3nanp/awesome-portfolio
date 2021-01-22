@@ -4,14 +4,6 @@
   box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-strong {
-  font-weight: bold;
-  font-family: Roboto, sans-serif;
-}
-
 a {
 	text-decoration: none;
 }
