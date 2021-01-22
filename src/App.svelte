@@ -1,19 +1,16 @@
 <script lang="ts" context="module">
-	import Footer from './Footer.svelte'
+  import Footer from './Footer.svelte'
+  import Header from './Header.svelte'
 </script>
 
-<main>
-	<h1>Testing</h1>
-	
-	<Footer />
+<main class="h-screen">
+  <Header />
+
+  <Footer />
 </main>
 
-<style>
-  main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-		justify-content: center;
-		height: 100vh;
-  }
+<style global lang="postcss">
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
 </style>
