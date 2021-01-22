@@ -1,5 +1,16 @@
-*, html, body {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+body {
+	background: #121214;
+}
+
+h1,
+h2,
+h3,
+strong {
+  font-weight: bold;
+  font-family: Nunito, system-ui, sans-serif;
+}
+
+html, body {
+  color: #e1e1e6;
+  font-family: Roboto, system-ui, sans-serif;
 }
