@@ -1,16 +1,20 @@
-body {
-	background: #121214;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3,
-strong {
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3, strong {
   font-weight: bold;
   font-family: Nunito, system-ui, sans-serif;
 }
 
 html, body {
+  background: #121214;
   color: #e1e1e6;
   font-family: Roboto, system-ui, sans-serif;
 }
