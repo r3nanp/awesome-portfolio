@@ -9,7 +9,7 @@ module.exports = {
     content: ['./src/**/*.svelte', './public/**/*.html'],
     enabled: production,
   },
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {},
   },
