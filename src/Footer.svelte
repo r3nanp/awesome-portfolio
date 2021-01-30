@@ -9,10 +9,16 @@
       href="https://github.com/r3nanp/awesome-portfolio"
       rel="noopener noreferrer"
       target="_blank"
-      class="bg-gray-500 px-2 py-1 rounded-xl transition hover:bg-gray-700"
+      class="bg-purple-500 px-2 py-1 my-2 rounded-xl transition hover:bg-purple-700"
       >
       <i class="fab fa-github fill-current text-white" />
       Star</a
     >
   </footer>
 </main>
+
+<style>
+  a:hover {
+    transform: scale(1.1);
+  }
+</style>
