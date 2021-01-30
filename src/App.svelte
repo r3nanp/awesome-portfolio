@@ -1,6 +1,8 @@
 <script lang="ts">
   import Footer from './Footer.svelte'
   import Header from './components/Header/Header.svelte'
+  import GithubCorner from './components/GithubCorner/GithubCorner.svelte'
+
   import { onMount } from 'svelte'
   import type { IAPIRepos } from './types'
 
@@ -26,6 +28,8 @@
     {/if}
   </ul>
   <Footer />
+
+  <GithubCorner />
 </main>
 
 <style global lang="postcss">
