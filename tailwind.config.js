@@ -11,7 +11,11 @@ module.exports = {
   },
   darkMode: false,
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['Roboto', 'Nunito', 'ui-sans-serif']
+      }
+    },
   },
   variants: {
     extend: {},
