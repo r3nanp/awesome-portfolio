@@ -10,8 +10,7 @@ h1, h2, h3, strong {
 }
 
 html, body {
-  min-height: 100vh;
-  background: #121214;
-  color: #e1e1e6;
+  background: white;
+  color: black;
   font-family: Roboto, system-ui, sans-serif;
 }
