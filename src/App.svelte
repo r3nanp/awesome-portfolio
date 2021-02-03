@@ -1,21 +1,20 @@
 <script lang="ts">
-  import Footer from './Footer.svelte'
-  import Header from './components/Header/Header.svelte'
-  // import GithubCorner from './components/GithubCorner/GithubCorner.svelte'
+  import { onMount } from 'svelte';
+  import { fly } from 'svelte/transition';
+  import type { IAPIRepos } from './types';
 
-  import { onMount } from 'svelte'
-  import type { IAPIRepos } from './types'
+  import Footer from './Footer.svelte';
+  import Header from './components/Header/Header.svelte';
 
-  let repo_info: IAPIRepos[] = []
+  let repo_info: IAPIRepos[] = [];
 
   onMount(async () => {
-    const response = await fetch('https://api.github.com/users/r3nanp/repos')
-    const data = await response.json()
+    const response = await fetch('https://api.github.com/users/r3nanp/repos');
+    const data = await response.json();
 
-    repo_info = data
-  })
+    repo_info = data;
+  });
 </script>
-
 
 <svelte:head>
   <title>Renan Pereira - Portfolio</title>
@@ -27,7 +26,7 @@
   <meta property="og:title" content="Renan Pereira - Portfolio" />
   <meta property="og:description" content="My portfolio using new techs!" />
 
-  <meta property="og:image" content="/icon.png" />
+  <meta property="og:image" content="../public/icon.png" />
   <meta property="og:image:type" content="image/png" />
 
   <meta property="og:image:width" content="1200" />
@@ -38,13 +37,13 @@
 
 <main class="h-screen">
   <Header />
-  <ul>
+  <ul class="p-2">
     {#if repo_info}
       {#each repo_info as { name }, i}
-        <li>{i + 1}: {name}</li>
+        <li transition:fly={{ x: -40, duration: 2000 }}>{i + 1}: {name}</li>
       {/each}
-      {:else}
-        <p class="text-2xl">Loading...</p>
+    {:else}
+      <p class="text-2xl p-2">Loading...</p>
     {/if}
   </ul>
   <Footer />
