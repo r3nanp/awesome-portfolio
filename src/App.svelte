@@ -3,8 +3,9 @@
   import { fly } from 'svelte/transition';
   import type { IAPIRepos } from './types';
 
-  import Footer from './Footer.svelte';
+  import Footer from './components/Footer.svelte';
   import Header from './components/Header/Header.svelte';
+  import Presentation from './components/Presentation.svelte';
 
   let repo_info: IAPIRepos[] = [];
 
@@ -35,9 +36,10 @@
   <link rel="icon" href="/icon.png" />
 </svelte:head>
 
-<main class="h-screen">
-  <Header />
-  <ul class="p-2">
+<Header />
+<main>
+  <Presentation />
+  <ul class="p-2 bg-gray-100">
     {#if repo_info}
       {#each repo_info as { name }, i}
         <li transition:fly={{ x: -40, duration: 2000 }}>{i + 1}: {name}</li>
@@ -46,8 +48,8 @@
       <p class="text-2xl p-2">Loading...</p>
     {/if}
   </ul>
-  <Footer />
 </main>
+<Footer />
 
 <style global lang="postcss">
   @tailwind base;
