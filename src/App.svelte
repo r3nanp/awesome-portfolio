@@ -42,19 +42,26 @@
 <Header />
 <main>
   <Presentation />
-  <article class="text-center">
+  <article class="text-center my-2">
     <h1 class="center text-4xl font-bold py-2">Projetos</h1>
     <ul
       class="p-2 bg-gray-100 grid grid-cols-1 grid-rows-4 gap-y-4 sm:px-6 md:px-8 md:grid-cols-3 md:grid-rows-1 gap-x-2"
     >
       {#if repos}
-        {#each repos as { name, html_url }}
+        {#each repos as { name, html_url, description }}
           <li
             transition:fly={{ x: -40, duration: 2000 }}
-            class="flex justify-center md:justify-start items-center shadow-xl w-30 h-30"
+            class="flex justify-center flex-col items-center md:justify-start shadow-xl w-30 h-40 text-center py-4"
           >
-            <a href={html_url} target="_blank" rel="noopener noreferrer">
+            <a
+              href={html_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="w-30 h-40 flex flex-col items-center justify-center"
+            >
               <strong class="text-black text-center text-xl">{name}</strong>
+
+              <p class="text-center text-md px-2">{description}</p>
             </a>
           </li>
         {/each}
