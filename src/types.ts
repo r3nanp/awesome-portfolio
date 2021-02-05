@@ -5,7 +5,5 @@ export interface IAPIUser {
 
 export interface IAPIRepos {
   name: string
-  owner: {
-    login: string
-  }
+  html_url: string
 }
