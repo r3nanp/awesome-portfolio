@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": ["standard", "prettier", "prettier/@typescript-eslint"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "overrides": [
+    {
+      "files": ["*.svelte"],
+      "processor": "svelte3/svelte3"
+    }
+  ],
+  "plugins": ["@typescript-eslint", "svelte3", "prettier"],
+  "rules": {
+    "semi": "off",
+    "camelcase": "off",
+    "space-before-function-paren": "off",
+    "comma-dangle": "off"
+  }
+}
