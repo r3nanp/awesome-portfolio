@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="My portfolio using new techs!" />
 
-    <meta property="og:image" content="/icon.png" />
+    <meta property="og:image" content="/images/ui.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:site_name" content="Renan Portfolio" />
     <meta property="og:title" content="Renan Pereira - Portfolio" />
@@ -37,6 +37,32 @@
       rel="stylesheet"
     />
     <title>Renan Pereira - Portfolio</title>
+    <script>
+      const cacheName = 'Portfolio'
+
+      self.addEventListener('install', e => {
+        e.waitUntil(
+          caches.open(cacheName).then(cache => {
+            return cache.addAll([
+              '/build',
+              '/index.html',
+              '/global.css'
+            ])
+          })
+        )
+      })
+
+      self.addEventListener('fetch', event => {
+        event.respondWith(
+          caches
+            .open(cacheName)
+            .then(cache => cache.match(event.request, { ignoreSearch: true }))
+            .then(response => {
+              return response || fetch(event.request)
+            })
+        )
+      })
+    </script>
     <script defer src="/build/bundle.js"></script>
   </head>
 
