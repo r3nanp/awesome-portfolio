@@ -1,15 +1,16 @@
 <script lang="ts">
-  const logo = 'images/ui.png';
+  const logo = 'images/ui.png'
 </script>
 
 <section class="flex h-screen align-center overflow-hidden">
   <article
     class="flex flex-col items-center justify-center text-center p-16 w-full md:justify-start md:items-start md:w-1/2 md:p-20"
   >
-    <span class="text-xl tracking-wide">Olá!</span>
-    <h2 class="text-4xl tracking-wide">Sou Renan Pereira.</h2>
+    <p class="text-xl tracking-wide">Olá!</p>
+    <h2 id="typewriter" class="text-4xl tracking-wide overflow-hidden">
+      Sou Renan Pereira.
+    </h2>
     <span class="text-xl tracking-wide">Desenvolvedor Full Stack</span>
-
     <a
       href="https://github.com/r3nanp"
       target="_blank"
@@ -29,3 +30,29 @@
     />
   </article>
 </section>
+
+<style>
+  #typewriter {
+    border-right: 0.15em solid black;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
+</style>
