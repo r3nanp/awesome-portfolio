@@ -1,0 +1,11 @@
+{
+  "name": "Renan Pereira - Portfolio",
+  "description": "My portfolio written in Svelte + Typescript",
+  "short_name": "Portfolio",
+  "start_url": ".",
+  "theme_color": "#fff",
+  "background_color": "#fff",
+  "Scope": "Service-Worker-Allowed",
+  "display": "standalone",
+  "prefer_related_applications": true
+}
