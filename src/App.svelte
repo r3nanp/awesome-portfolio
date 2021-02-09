@@ -6,6 +6,7 @@
   import Footer from './components/Footer.svelte'
   import Header from './components/Header/Header.svelte'
   import Presentation from './components/Presentation.svelte'
+  import Skills from './components/Skills.svelte'
 
   let repos: IAPIRepos[] = []
 
@@ -20,38 +21,19 @@
   })
 </script>
 
-<svelte:head>
-  <title>Renan Pereira - Portfolio</title>
-
-  <meta name="description" content="My portfolio using new techs!" />
-
-  <meta property="og:site_name" content="Renan Portfolio" />
-
-  <meta property="og:title" content="Renan Pereira - Portfolio" />
-  <meta property="og:description" content="My portfolio using new techs!" />
-
-  <meta property="og:image" content="../public/icon.png" />
-  <meta property="og:image:type" content="image/png" />
-
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <link rel="icon" href="/icon.png" />
-</svelte:head>
-
 <Header />
 <main>
   <Presentation />
-  <section class="text-center my-2">
+  <section class="bg-gray-100 text-center my-2 p-10">
     <h1 class="center text-4xl font-bold my-2">Projetos</h1>
     <article
-      class="p-2 bg-gray-100 grid grid-cols-1 grid-rows-4 gap-y-4 sm:px-6 md:px-8 md:grid-cols-3 md:grid-rows-1 gap-x-2"
+      class="p-2 grid grid-cols-1 grid-rows-4 gap-y-4 sm:px-6 md:px-8 md:grid-cols-3 md:grid-rows-1 gap-x-4"
     >
       {#if repos}
         {#each repos as { name, html_url, description }}
           <div
             transition:fly={{ x: -40, duration: 2000 }}
-            class="flex justify-center flex-col items-center md:justify-start shadow-xl w-30 h-40 text-center py-4"
+            class="flex justify-center bg-white flex-col items-center md:justify-start shadow-md w-30 h-40 text-center py-4 rounded m-2"
           >
             <strong class="text-black text-center text-xl">{name}</strong>
             <p class="text-center text-md px-2">
@@ -80,6 +62,8 @@
       Meus repositórios no Github
     </a>
   </section>
+
+  <Skills />
 </main>
 <Footer />
 
