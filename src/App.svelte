@@ -7,6 +7,7 @@
   import Header from './components/Header/Header.svelte'
   import Presentation from './components/Presentation.svelte'
   import Skills from './components/Skills.svelte'
+  import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
 
   let repos: IAPIRepos[] = []
 
@@ -41,10 +42,17 @@
             </p>
             <a href={html_url} target="_blank" rel="noopener noreferrer">
               <button
-                class="my-2 uppercase font-bold text-white bg-blue-600 hover:bg-blue-700 w-24 h-10 rounded"
+                name="Github"
+                class="flex items-center py-2 my-2 bg-blue-600 hover:bg-blue-700 w-24 h-10 rounded"
               >
-                <i class="fab fa-github fill-current text-white" />
-                &nbsp;Github
+                <div
+                  class="w-11 h-6 fill-current text-white text-center"
+                >
+                  <FaGithub />
+                </div>
+                <span class="uppercase text-white font-bold text-md pr-2"
+                  >github</span
+                >
               </button></a
             >
           </div>
