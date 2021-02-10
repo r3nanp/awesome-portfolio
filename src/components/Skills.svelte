@@ -20,7 +20,7 @@
       </IconWrapper>
 
       <h2 class="mt-4 text-2xl font-bold">HTML</h2>
-      <p class="text-md font-normal">3 anos de XP</p>
+      <p class="text-md font-normal">2 anos de XP</p>
     </Box>
 
     <Box>
@@ -29,7 +29,7 @@
       </IconWrapper>
 
       <h2 class="mt-4 text-2xl font-bold">CSS</h2>
-      <p class="text-md font-normal">3 anos de XP</p>
+      <p class="text-md font-normal">2 anos de XP</p>
     </Box>
 
     <Box>
