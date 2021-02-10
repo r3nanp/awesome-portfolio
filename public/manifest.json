@@ -7,5 +7,11 @@
   "background_color": "#fff",
   "Scope": "Service-Worker-Allowed",
   "display": "standalone",
-  "prefer_related_applications": true
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "100x100"
+    }
+  ]
 }
