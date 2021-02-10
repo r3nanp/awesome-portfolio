@@ -10,7 +10,7 @@
   import DiDatabase from 'svelte-icons/di/DiDatabase.svelte'
 </script>
 
-<section class="mt-6 text-center p-10 overflow-hidden">
+<section class="mt-6 text-center p-10 overflow-hidden w-full">
   <h2 class="font-bold text-4xl text-black">Habilidades</h2>
 
   <div class="flex h-auto flex-wrap mt-4">
@@ -42,6 +42,15 @@
     </Box>
 
     <Box>
+      <IconWrapper color="text-yellow-200">
+        <DiDatabase />
+      </IconWrapper>
+
+      <h2 class="mt-4 text-2xl font-bold">SQL</h2>
+      <p class="text-md font-normal">2 anos de XP</p>
+    </Box>
+
+    <Box>
       <IconWrapper color="text-blue-500">
         <DiReact />
       </IconWrapper>
@@ -57,14 +66,6 @@
 
       <h2 class="mt-4 text-2xl font-bold">Node.js</h2>
       <p class="text-md font-normal">7 meses de XP</p>
-    </Box>
-    <Box>
-      <IconWrapper color="text-yellow-200">
-        <DiDatabase />
-      </IconWrapper>
-
-      <h2 class="mt-4 text-2xl font-bold">SQL</h2>
-      <p class="text-md font-normal">2 anos de XP</p>
     </Box>
   </div>
 </section>
