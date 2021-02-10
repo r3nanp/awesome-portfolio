@@ -1,7 +1,8 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-
   import { typewriterEffect as typewriter } from '../typewriter'
+
+  import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
 
   let visible = false
   const logo = 'images/ui.png'
@@ -32,8 +33,10 @@
       rel="noopener noreferrer"
       class="p-4 text-md font-bold mt-4 w-52 bg-gray-600 transition hover:bg-gray-700 rounded-xl text-white flex items-center justify-center self-center md:self-start"
     >
-      <i class="fab fa-github fill-current text-white text-xl" />
-      &nbsp;Meu Github
+      <div class="w-11 h-6 fill-current text-white">
+        <FaGithub />
+      </div>
+      <span class="text-white font-bold text-xl">Meu Github</span>
     </a>
   </article>
 
