@@ -42,7 +42,9 @@
 
   <article class="hidden md:block md:relative md:h-screen md:w-1/2">
     <img
-      class="w-full absolute top-4 max-w-4xl h-4/5"
+      class="w-full absolute top-4 max-w-4xl"
+      width={500}
+      height={500}
       src={logo}
       alt="Codando"
     />
