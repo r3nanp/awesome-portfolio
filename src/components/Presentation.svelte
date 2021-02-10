@@ -1,5 +1,14 @@
 <script lang="ts">
+  import { onMount } from 'svelte'
+
+  import { typewriterEffect as typewriter } from '../typewriter'
+
+  let visible = false
   const logo = 'images/ui.png'
+
+  onMount(() => {
+    visible = true
+  })
 </script>
 
 <section class="flex h-screen align-center overflow-hidden">
@@ -7,9 +16,15 @@
     class="flex flex-col items-center justify-center text-center p-16 w-full md:justify-start md:items-start md:w-1/2 md:p-20"
   >
     <p class="text-xl tracking-wide">Olá!</p>
-    <h2 id="typewriter" class="text-4xl tracking-wide overflow-hidden">
-      Sou Renan Pereira.
-    </h2>
+    {#if visible}
+      <h2
+        id="typewriter"
+        in:typewriter={{ speed: 100 }}
+        class="text-4xl tracking-wide overflow-hidden"
+      >
+        Sou Renan Pereira.
+      </h2>
+    {/if}
     <span class="text-xl tracking-wide">Desenvolvedor Full Stack</span>
     <a
       href="https://github.com/r3nanp"
@@ -35,16 +50,7 @@
   #typewriter {
     border-right: 0.15em solid black;
     white-space: nowrap;
-    animation: typing 2s steps(20, end), blink-caret 0.75s step-end infinite;
-  }
-
-  @keyframes typing {
-    from {
-      width: 0;
-    }
-    to {
-      width: 80%;
-    }
+    animation: blink-caret 0.75s step-end infinite;
   }
   @keyframes blink-caret {
     from,
