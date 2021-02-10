@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <meta name="description" content="My portfolio using new techs!" />
-
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
     <meta property="og:image" content="/images/ui.png" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:site_name" content="Renan Portfolio" />
@@ -12,6 +17,8 @@
     <meta property="og:description" content="My portfolio using new techs!" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
+    <meta name="author" content="r3nanp" />
+    <meta name="keywords" content="r3nanp, Renan Pereira, svelte" />
 
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="Renan Pereira - Portfolio" />
@@ -22,12 +29,6 @@
     <link rel="stylesheet" href="/global.css" />
     <link rel="stylesheet" href="/build/bundle.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
-      crossorigin="anonymous"
-    />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
       rel="stylesheet"
@@ -43,11 +44,7 @@
       self.addEventListener('install', e => {
         e.waitUntil(
           caches.open(cacheName).then(cache => {
-            return cache.addAll([
-              '/build',
-              '/index.html',
-              '/global.css'
-            ])
+            return cache.addAll(['/build', '/index.html', '/global.css'])
           })
         )
       })
