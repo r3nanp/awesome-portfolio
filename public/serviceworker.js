@@ -1,18 +1,11 @@
-const cacheName = 'r3nanp'
+const cacheName = 'portfolio'
 
 self.addEventListener('install', e => {
   e.waitUntil(
-    caches.open(cacheName).then(cache => {
-      return cache
-        .addAll([
-          '/index.html',
-          '/manifest.json',
-          '/build',
-          '/icon.png',
-          'global.css',
-          '/images',
-        ])
-        .then(() => self.skipWaiting())
+    caches.open(cacheName).then(async cache => {
+      await cache
+        .addAll(['/index.html', '/manifest.json', '/global.css', '/build'])
+      return self.skipWaiting()
     })
   )
 })
