@@ -8,6 +8,8 @@
   import Presentation from './components/Presentation.svelte'
   import Skills from './components/Skills.svelte'
   import Wave from './components/Wave.svelte'
+  import About from './components/About.svelte'
+
   import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
 
   let repos: IAPIRepos[] = []
@@ -26,6 +28,8 @@
 <Header />
 <main>
   <Presentation />
+
+  <About />
   <Wave>
     <article class="bg-gray-100 text-center p-10">
       <h1 class="center text-4xl font-bold py-2">Projetos</h1>
