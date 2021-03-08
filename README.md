@@ -1,12 +1,6 @@
-<div align="center">
+# [🔥 My Awesome Portfolio](https://portfolio.r3nanp.vercel.app)
 
-# 🔥 Awesome Portfolio
-
-</div>
-
-<div align="center">
-  My portfolio made in Svelte + Typescript
-</div>
+> My portfolio made in Svelte + Typescript
 
 ---
 
@@ -20,7 +14,7 @@
 - Typescript
 - TailwindCSS
 
-### 🤔 How to run the app locally
+## 🤔 How to run the app locally
 
 ```
 # Clone repository
@@ -28,34 +22,13 @@
 $ git clone https://github.com/r3nanp/awesome-portfolio.git
 ```
 
-### 💪 How to Fork the project
+```
+# Run this commands and open your browser at 5000 port:
 
+$ npm run or yarn dev
 ```
-# Create a new branch with your changes:
+## 🎇 Do you want to contribute?
+[Check this step by step](./.github/CONTRIBUTING.md)
 
-$ git checkout -b <branch>
-```
-
-```
-# Save your changes and create a commit message telling you what you did:
-
-$ git commit -m "<commit>"
-```
----
-```
-# Submit your changes:
-
-$ git push origin <branch>
-```
-
-```
-# At the root of the project, run:
-
-yarn or npm install
-```
-
-```
-# To run the app in your machine:
-
-yarn dev or npm run dev
-```
+## Screenshot
+<img src="./.github/screenshot.png">
