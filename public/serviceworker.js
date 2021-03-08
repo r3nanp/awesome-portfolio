@@ -3,8 +3,7 @@ const cacheName = 'portfolio'
 self.addEventListener('install', e => {
   e.waitUntil(
     caches.open(cacheName).then(async cache => {
-      await cache
-        .addAll(['/index.html', '/manifest.json', '/global.css', '/build'])
+      await cache.addAll(['/'])
       return self.skipWaiting()
     })
   )
