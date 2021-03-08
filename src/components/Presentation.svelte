@@ -1,6 +1,6 @@
 <script lang="ts">
   import { onMount } from 'svelte'
-  import { typewriterEffect as typewriter } from '../typewriter'
+  import { typewriter } from '../typewriter'
 
   import FaGithub from 'svelte-icons/fa/FaGithub.svelte'
 
@@ -12,7 +12,7 @@
   })
 </script>
 
-<section class="flex h-1/2 align-center overflow-hidden">
+<section class="flex h-screen align-center overflow-hidden">
   <article
     class="flex flex-col items-center justify-center text-center p-16 w-full md:justify-start md:items-start md:w-1/2 md:p-20"
   >
