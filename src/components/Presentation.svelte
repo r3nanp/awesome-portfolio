@@ -12,7 +12,7 @@
   })
 </script>
 
-<section class="flex h-screen align-center overflow-hidden">
+<section class="flex h-screen align-center overflow-hidden bg-gradient-to-r from-accents-0 via-gray-50 to-accents-1">
   <article
     class="flex flex-col items-center justify-center text-center p-16 w-full md:justify-start md:items-start md:w-1/2 md:p-20"
   >

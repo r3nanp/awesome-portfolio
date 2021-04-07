@@ -1,9 +1,11 @@
 <script lang="ts">
+  import { fly } from 'svelte/transition'
   const avatar_url = 'https://avatars.githubusercontent.com/u/47953339?v=4'
 </script>
 
 <section
   class="flex items-center justify-center md:grid md:grid-cols-2 md:content-center md:gap-20 md:px-10"
+  in:fly={{ y: -200, duration: 1000 }}
 >
   <article class="hidden md:block">
     <img src={avatar_url} alt="Renan" class="rounded-3xl" />
