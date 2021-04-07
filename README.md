@@ -1,3 +1,5 @@
+<img src="./.github/screenshot.png">
+
 # [🔥 My Awesome Portfolio](https://portfolio.r3nanp.vercel.app)
 
 > My portfolio made in Svelte + Typescript
@@ -14,21 +16,44 @@
 - Typescript
 - TailwindCSS
 
-## 🤔 How to run the app locally
-
-```
-# Clone repository
-
-$ git clone https://github.com/r3nanp/awesome-portfolio.git
-```
-
-```
-# Run this commands and open your browser at 5000 port:
-
-$ npm run or yarn dev
-```
 ## 🎇 Do you want to contribute?
 [Check this step by step](./.github/CONTRIBUTING.md)
 
-## Screenshot
-<img src="./.github/screenshot.png">
+## 👷‍♂️ Installation
+
+**You need to install [Node.js](https://nodejs.org/en/download/) and [Yarn](https://yarnpkg.com/) first, then in order to clone the project via HTTPS, run this command:**
+
+```
+git clone https://github.com/r3nanp/sellapi.git
+```
+
+SSH URLs provide access to a Git repository via SSH, a secure protocol. If you use a SSH key registered in your Github account, clone the project using this command:
+
+```
+git clone git@github.com:r3nanp/sellapi.git
+```
+
+**Install dependencies**
+
+```
+yarn install
+```
+
+Or
+
+```
+npm install
+```
+
+# 🏃 Getting Started
+
+Run the following command in order to start the application in a development environment:
+
+```yarn dev```
+
+# :closed_book: License
+
+Released in 2021.
+This project is under the [MIT license](LICENSE).
+
+Made with love by [Renan Pereira](https://github.com/r3nanp) 💜🚀
