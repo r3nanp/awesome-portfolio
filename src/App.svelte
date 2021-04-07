@@ -40,7 +40,7 @@
           {#each repos as { name, html_url, description }}
             <div
               transition:fly={{ x: -40, duration: 2000 }}
-              class="flex justify-center bg-white flex-col items-center md:justify-start shadow-md w-30 h-40 text-center py-4 rounded m-2"
+              class="flex justify-center bg-white flex-col items-center md:justify-start shadow-md w-32 h-44 text-center py-4 rounded m-2"
             >
               <strong class="text-black text-center text-xl">{name}</strong>
               <p class="text-center text-md px-2">
@@ -49,7 +49,7 @@
               <a href={html_url} target="_blank" rel="noopener noreferrer">
                 <button
                   name="Github"
-                  class="flex items-center py-2 my-2 bg-blue-600 hover:bg-blue-700 w-24 h-10 rounded"
+                  class="flex items-center py-3 px-8 my-2 bg-blue-600 hover:bg-blue-700 w-28 h-12 rounded"
                 >
                   <div class="w-11 h-6 fill-current text-white text-center">
                     <FaGithub />
