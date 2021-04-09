@@ -1,4 +1,7 @@
-<img src="./.github/screenshot.png">
+<div align="center">
+<img src="./.github/website.gif">
+</div>
+</br>
 
 # [🔥 My Awesome Portfolio](https://portfolio.r3nanp.vercel.app)
 
