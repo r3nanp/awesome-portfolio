@@ -9,7 +9,7 @@ module.exports = {
     content: ['./src/**/*.svelte', './public/**/*.html'],
     enabled: production,
   },
-  darkMode: 'media',
+  darkMode: 'media', // Get the preference theme from the OS.
   theme: {
     extend: {
       fontFamily: {
