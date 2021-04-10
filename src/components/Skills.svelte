@@ -11,8 +11,8 @@
   import DiMongodb from 'svelte-icons/di/DiMongodb.svelte'
 </script>
 
-<section class="mt-6 text-center p-10 overflow-hidden w-full">
-  <h2 class="font-bold text-4xl text-black">Habilidades</h2>
+<section class="text-center p-10 overflow-hidden w-full dark:bg-gray-700">
+  <h2 class="font-bold text-4xl text-black dark:text-white">Habilidades</h2>
 
   <div class="flex h-auto flex-wrap mt-4">
     <Box>
@@ -20,7 +20,7 @@
         <DiHtml5 />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">HTML</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">HTML</h2>
     </Box>
 
     <Box>
@@ -28,7 +28,7 @@
         <DiCss3 />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">CSS</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">CSS</h2>
     </Box>
 
     <Box>
@@ -36,7 +36,7 @@
         <DiJsBadge />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">Javascript</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">Javascript</h2>
     </Box>
 
     <Box>
@@ -44,7 +44,7 @@
         <DiDatabase />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">SQL</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">SQL</h2>
     </Box>
 
     <Box>
@@ -52,7 +52,7 @@
         <DiReact />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">React</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">React</h2>
     </Box>
 
     <Box>
@@ -60,7 +60,7 @@
         <DiNodejsSmall />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">Node.js</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">Node.js</h2>
     </Box>
 
     <Box>
@@ -68,7 +68,7 @@
         <DiMongodb />
       </IconWrapper>
 
-      <h2 class="mt-4 text-2xl font-bold">MongoDB</h2>
+      <h2 class="mt-4 text-2xl font-bold dark:text-white">MongoDB</h2>
     </Box>
   </div>
 </section>
