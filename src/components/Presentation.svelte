@@ -12,31 +12,31 @@
   })
 </script>
 
-<section class="flex h-screen align-center overflow-hidden bg-gradient-to-r from-accents-0 via-gray-50 to-accents-1">
+<section class="flex h-screen align-center overflow-hidden bg-gradient-to-r from-accents-0 via-gray-50 to-accents-1 dark:bg-gray-800">
   <article
     class="flex flex-col items-center justify-center text-center p-16 w-full md:justify-start md:items-start md:w-1/2 md:p-20"
   >
-    <p class="text-xl tracking-wide">Olá!</p>
+    <p class="text-xl tracking-wide font-mono dark:text-white">Olá!</p>
     {#if visible}
       <h2
         id="typewriter"
         in:typewriter={{ speed: 100 }}
-        class="text-4xl tracking-wide overflow-hidden"
+        class="text-4xl tracking-wide overflow-hidden font-mono dark:text-white"
       >
         Sou Renan Pereira.
       </h2>
     {/if}
-    <span class="text-xl tracking-wide">Desenvolvedor Full Stack</span>
+    <span class="text-xl tracking-wide font-mono dark:text-white">Desenvolvedor Full Stack</span>
     <a
       href="https://github.com/r3nanp"
       target="_blank"
       rel="noopener noreferrer"
-      class="p-4 text-md font-bold mt-4 w-52 bg-gray-600 transition hover:bg-gray-700 rounded-xl text-white flex items-center justify-center self-center md:self-start"
+      class="p-4 text-md font-bold mt-4 w-52 bg-gray-600 transition hover:bg-gray-700 dark:bg-gray-500 dark:hover:bg-gray-600 rounded-xl text-white flex items-center justify-center self-center md:self-start"
     >
       <div class="w-11 h-6 fill-current text-white">
         <FaGithub />
       </div>
-      <span class="text-white font-bold text-xl">Meu Github</span>
+      <span class="text-white font-bold text-xl font-sans">Meu Github</span>
     </a>
   </article>
 
