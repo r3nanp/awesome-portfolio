@@ -1,6 +1,6 @@
 <script lang="ts">
   import { fly } from 'svelte/transition'
-  const avatar_url = 'https://avatars.githubusercontent.com/u/47953339?v=4'
+  const avatar_url = 'https://github.com/r3nanp.png'
 </script>
 
 <section
